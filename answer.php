@@ -59,6 +59,10 @@
             if ($answer < $secondInteger) {
               break;
             }
+            else {
+              $answer = $answer - $secondInteger;
+              $counter = $counter = 1;
+            }
           }
           echo "<p>The quotient is " . $counter . ", remainder " . $answer . ".</p>";
           ?>
