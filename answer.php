@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Sum of a Number's Natural Numbers, in PHP" />
+  <meta name="description" content="Divide Two Numbers, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Olivia TD" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Sum of a Number's Natural Numbers, in PHP</title>
+  <title>Divide Two Numbers, in PHP</title>
 </head>
 
 <body>
@@ -38,25 +38,29 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Sum of a Number's Natural Numbers, in PHP</span>
+        <span class="mdl-layout-title">Divide Two Numbers, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/sum.png" alt="Image of the formula for finding the sum of a number's natural numbers." />
+        <img src="./images/division.png" alt="Image a long division equation." />
       </div>
       <div class=" page-content-php">
         <div id="user-info">
 
           <?php
           // input
-          $answer = 0;
-          $integer  = intval($_GET["integer"]);
+          $counter = 0;
+          $firstInteger  = intval($_GET["integer-one"]);
+          $answer = $firstInteger;
+          $secondInteger  = intval($_GET["integer-two"]);
 
-          for ($counter = 1; $counter <= $integer; $counter++) {
-            $answer = $answer + $counter;
+          while (true) {
+            if ($answer < $secondInteger) {
+              break;
+            }
           }
-          echo "<p>The sum is " . $answer . ".</p>";
+          echo "<p>The quotient is " . $counter . ", remainder " . $answer . ".</p>";
           ?>
 
         </div>
