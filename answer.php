@@ -61,7 +61,7 @@
             }
             else {
               $answer = $answer - $secondInteger;
-              $counter = $counter = 1;
+              $counter = $counter + 1;
             }
           }
           echo "<p>The quotient is " . $counter . ", remainder " . $answer . ".</p>";
