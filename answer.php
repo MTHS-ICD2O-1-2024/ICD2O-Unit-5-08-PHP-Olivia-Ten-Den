@@ -58,8 +58,7 @@
           while (true) {
             if ($answer < $secondInteger) {
               break;
-            }
-            else {
+            } else {
               $answer = $answer - $secondInteger;
               $counter = $counter + 1;
             }
